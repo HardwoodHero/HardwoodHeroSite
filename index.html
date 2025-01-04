@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardwood Hero</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex justify-between items-center h-24">
+                <a href="/" class="text-white text-3xl font-semibold">HARDWOOD HERO</a>
+                <div class="hidden md:flex items-center bg-white/10 backdrop-blur-md rounded-full px-8 h-12">
+                    <a href="/" class="nav-link">HOME</a>
+                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                    <a href="/services" class="nav-link">SERVICES</a>
+                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                    <a href="/gallery" class="nav-link">GALLERY</a>
+                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                    <a href="/about" class="nav-link">ABOUT</a>
+                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                    <a href="/contact" class="nav-link">CONTACT</a>
+                </div>
+                <a href="/quote" class="btn-quote">GET QUOTE</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="relative h-screen flex items-center justify-center">
+            <div class="absolute inset-0">
+                <img src="images/background.jpg" 
+                     alt="Dark Wood Background" 
+                     class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/30"></div>
+            </div>
+            <div class="relative text-center">
+                <h1 class="text-8xl md:text-9xl text-white font-semibold tracking-wide">HARDWOOD HERO</h1>
+                <p class="text-white/90 text-xl mt-6 tracking-widest uppercase">Saving one floor at a time</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 
