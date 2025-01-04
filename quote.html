@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Quote - Hardwood Hero</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #121212;">
+    <nav class="fixed w-full z-50" style="background-color: rgba(18, 18, 18, 0.95);">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex justify-between items-center h-24">
+                <a href="/" class="text-white text-3xl font-semibold">HARDWOOD HERO</a>
+                <div class="hidden md:flex items-center bg-white/10 backdrop-blur-md rounded-full px-8 h-12">
+                    <a href="/" class="nav-link">HOME</a>
+                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                    <a href="/services" class="nav-link">SERVICES</a>
+                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                    <a href="/gallery" class="nav-link">GALLERY</a>
+                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                    <a href="/about" class="nav-link">ABOUT</a>
+                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                    <a href="/contact" class="nav-link">CONTACT</a>
+                </div>
+                <a href="/quote" class="btn-quote">GET QUOTE</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-40">
+        <div class="max-w-7xl mx-auto px-8">
+            <h1 class="text-5xl font-semibold text-white mb-4">Get a Free Quote</h1>
+            <p class="text-gray-400 text-xl mb-16">Tell us about your project</p>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Quote Form -->
+                <div class="bg-[#1a1a1a] p-8 rounded-lg">
+                    <form class="space-y-6" data-form="quote">
+                        <!-- Personal Info -->
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="form-group">
+                                <label class="form-label">First Name</label>
+                                <input type="text" name="firstName" required class="w-full px-4 py-3 rounded-lg focus:outline-none">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" name="lastName" required class="w-full px-4 py-3 rounded-lg focus:outline-none">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg focus:outline-none">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Phone</label>
+                            <input type="tel" name="phone" required class="w-full px-4 py-3 rounded-lg focus:outline-none">
+                        </div>
+
+                        <!-- Project Details -->
+                        <div class="form-group">
+                            <label class="form-label">Service Type</label>
+                            <select name="serviceType" required class="w-full px-4 py-3 rounded-lg focus:outline-none">
+                                <option value="" disabled selected>Select a service...</option>
+                                <option value="installation">New Installation</option>
+                                <option value="refinishing">Refinishing</option>
+                                <option value="repair">Repair</option>
+                                <option value="staining">Staining</option>
+                                <option value="maintenance">Maintenance</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Project Size (sq ft)</label>
+                            <input type="number" name="projectSize" required class="w-full px-4 py-3 rounded-lg focus:outline-none">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Project Details</label>
+                            <textarea name="projectDetails" required rows="4" class="w-full px-4 py-3 rounded-lg focus:outline-none" placeholder="Tell us more about your project..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-quote w-full">GET FREE QUOTE</button>
+                    </form>
+                </div>
+
+                <!-- Info Section -->
+                <div class="space-y-8">
+                    <div class="bg-[#1a1a1a] p-8 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-white mb-4">Why Choose Us?</h3>
+                        <ul class="space-y-4 text-gray-400">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-red-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                                Free, no-obligation quotes
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-red-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                                20+ years of experience
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-red-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                                Licensed and insured
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-red-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                                Satisfaction guaranteed
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-[#1a1a1a] p-8 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-white mb-4">Questions?</h3>
+                        <p class="text-gray-400 mb-4">Call us at (555) 123-4567 or email info@hardwoodhero.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
