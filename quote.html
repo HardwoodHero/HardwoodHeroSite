@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Quote - Hardwood Hero</title>
+    <title>Get a Quote - Hardwood Hero</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -12,122 +12,178 @@
     <nav class="fixed w-full z-50" style="background-color: rgba(18, 18, 18, 0.95);">
         <div class="max-w-7xl mx-auto px-8">
             <div class="flex justify-between items-center h-24">
-                <a href="/" class="text-white text-3xl font-semibold">HARDWOOD HERO</a>
+                <a href="/index.html" class="text-white text-3xl font-semibold">HARDWOOD HERO</a>
                 <div class="hidden md:flex items-center bg-white/10 backdrop-blur-md rounded-full px-8 h-12">
-                    <a href="/" class="nav-link">HOME</a>
+                    <a href="/index.html" class="nav-link">HOME</a>
                     <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/services" class="nav-link">SERVICES</a>
+                    <a href="/services.html" class="nav-link">SERVICES</a>
                     <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/gallery" class="nav-link">GALLERY</a>
+                    <a href="/gallery.html" class="nav-link">GALLERY</a>
                     <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/about" class="nav-link">ABOUT</a>
+                    <a href="/about.html" class="nav-link">ABOUT</a>
                     <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/contact" class="nav-link">CONTACT</a>
+                    <a href="/contact.html" class="nav-link">CONTACT</a>
                 </div>
-                <a href="/quote" class="btn-quote">GET QUOTE</a>
+                <a href="/quote.html" class="btn-quote">GET QUOTE</a>
             </div>
         </div>
     </nav>
 
-    <main class="pt-40">
+    <main class="pt-40 pb-24">
         <div class="max-w-7xl mx-auto px-8">
             <h1 class="text-5xl font-semibold text-white mb-4">Get a Free Quote</h1>
-            <p class="text-gray-400 text-xl mb-16">Tell us about your project</p>
-            
-            <div class="grid md:grid-cols-2 gap-12">
+            <p class="text-gray-400 text-xl mb-16">Tell us about your project for a custom quote</p>
+
+            <div class="grid md:grid-cols-3 gap-12">
                 <!-- Quote Form -->
-                <div class="bg-[#1a1a1a] p-8 rounded-lg">
-                    <form class="space-y-6" data-form="quote">
-                        <!-- Personal Info -->
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div class="form-group">
-                                <label class="form-label">First Name</label>
-                                <input type="text" name="firstName" required class="w-full px-4 py-3 rounded-lg focus:outline-none">
+                <div class="md:col-span-2">
+                    <div class="bg-[#1a1a1a] p-8 rounded-lg">
+                        <form id="quoteForm" class="space-y-6">
+                            <!-- Personal Information -->
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="firstName" class="block text-white mb-2">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required
+                                        class="w-full px-4 py-2 bg-[#222222] border border-gray-700 rounded-lg text-white">
+                                </div>
+                                <div>
+                                    <label for="lastName" class="block text-white mb-2">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required
+                                        class="w-full px-4 py-2 bg-[#222222] border border-gray-700 rounded-lg text-white">
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label class="form-label">Last Name</label>
-                                <input type="text" name="lastName" required class="w-full px-4 py-3 rounded-lg focus:outline-none">
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="email" class="block text-white mb-2">Email *</label>
+                                    <input type="email" id="email" name="email" required
+                                        class="w-full px-4 py-2 bg-[#222222] border border-gray-700 rounded-lg text-white">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-white mb-2">Phone *</label>
+                                    <input type="tel" id="phone" name="phone" required
+                                        class="w-full px-4 py-2 bg-[#222222] border border-gray-700 rounded-lg text-white">
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="form-label">Email</label>
-                            <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg focus:outline-none">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="form-label">Phone</label>
-                            <input type="tel" name="phone" required class="w-full px-4 py-3 rounded-lg focus:outline-none">
-                        </div>
 
-                        <!-- Project Details -->
-                        <div class="form-group">
-                            <label class="form-label">Service Type</label>
-                            <select name="serviceType" required class="w-full px-4 py-3 rounded-lg focus:outline-none">
-                                <option value="" disabled selected>Select a service...</option>
-                                <option value="installation">New Installation</option>
-                                <option value="refinishing">Refinishing</option>
-                                <option value="repair">Repair</option>
-                                <option value="staining">Staining</option>
-                                <option value="maintenance">Maintenance</option>
-                            </select>
-                        </div>
+                            <!-- Project Details -->
+                            <div>
+                                <label for="serviceType" class="block text-white mb-2">Service Type *</label>
+                                <select id="serviceType" name="serviceType" required
+                                    class="w-full px-4 py-2 bg-[#222222] border border-gray-700 rounded-lg text-white">
+                                    <option value="">Select a service</option>
+                                    <option value="installation">New Installation</option>
+                                    <option value="refinishing">Refinishing</option>
+                                    <option value="repair">Repair</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
 
-                        <div class="form-group">
-                            <label class="form-label">Project Size (sq ft)</label>
-                            <input type="number" name="projectSize" required class="w-full px-4 py-3 rounded-lg focus:outline-none">
-                        </div>
+                            <div>
+                                <label for="projectSize" class="block text-white mb-2">Project Size (sq ft) *</label>
+                                <input type="number" id="projectSize" name="projectSize" required
+                                    class="w-full px-4 py-2 bg-[#222222] border border-gray-700 rounded-lg text-white">
+                            </div>
 
-                        <div class="form-group">
-                            <label class="form-label">Project Details</label>
-                            <textarea name="projectDetails" required rows="4" class="w-full px-4 py-3 rounded-lg focus:outline-none" placeholder="Tell us more about your project..."></textarea>
-                        </div>
+                            <div>
+                                <label for="timeline" class="block text-white mb-2">Desired Timeline</label>
+                                <select id="timeline" name="timeline"
+                                    class="w-full px-4 py-2 bg-[#222222] border border-gray-700 rounded-lg text-white">
+                                    <option value="asap">As soon as possible</option>
+                                    <option value="1month">Within 1 month</option>
+                                    <option value="3months">Within 3 months</option>
+                                    <option value="planning">Just planning</option>
+                                </select>
+                            </div>
 
-                        <button type="submit" class="btn-quote w-full">GET FREE QUOTE</button>
-                    </form>
+                            <div>
+                                <label for="details" class="block text-white mb-2">Project Details</label>
+                                <textarea id="details" name="details" rows="4"
+                                    class="w-full px-4 py-2 bg-[#222222] border border-gray-700 rounded-lg text-white"
+                                    placeholder="Tell us more about your project..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-quote w-full">SUBMIT QUOTE REQUEST</button>
+                        </form>
+                    </div>
                 </div>
 
-                <!-- Info Section -->
+                <!-- Sidebar Information -->
                 <div class="space-y-8">
                     <div class="bg-[#1a1a1a] p-8 rounded-lg">
-                        <h3 class="text-2xl font-semibold text-white mb-4">Why Choose Us?</h3>
-                        <ul class="space-y-4 text-gray-400">
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-red-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                        <h2 class="text-2xl font-semibold text-white mb-6">Why Choose Us</h2>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-red-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                Free, no-obligation quotes
+                                <p class="text-gray-400">Free, no-obligation quotes</p>
                             </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-red-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-red-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                20+ years of experience
+                                <p class="text-gray-400">20+ years of experience</p>
                             </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-red-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-red-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                Licensed and insured
+                                <p class="text-gray-400">Licensed and insured</p>
                             </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-red-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-red-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                Satisfaction guaranteed
+                                <p class="text-gray-400">Satisfaction guaranteed</p>
                             </li>
                         </ul>
                     </div>
 
                     <div class="bg-[#1a1a1a] p-8 rounded-lg">
-                        <h3 class="text-2xl font-semibold text-white mb-4">Questions?</h3>
-                        <p class="text-gray-400 mb-4">Call us at (555) 123-4567 or email info@hardwoodhero.com</p>
+                        <h2 class="text-2xl font-semibold text-white mb-6">Contact Information</h2>
+                        <div class="space-y-4">
+                            <p class="text-gray-400">
+                                <span class="block font-medium text-white">Phone:</span>
+                                (515) 339-1629
+                            </p>
+                            <p class="text-gray-400">
+                                <span class="block font-medium text-white">Email:</span>
+                                jeradtjaden@gmail.com
+                            </p>
+                            <p class="text-gray-400">
+                                <span class="block font-medium text-white">Location:</span>
+                                West Des Moines, Iowa
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Footer -->
+    <footer class="bg-[#1a1a1a] py-16">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid md:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Hardwood Hero</h3>
+                    <p class="text-gray-400">Professional hardwood flooring services for your home.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Contact</h3>
+                    <p class="text-gray-400">(515) 339-1629<br>JeradTjaden@gmail.com</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Follow Us</h3>
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com/HardwoodHeroDSM/" class="text-gray-400 hover:text-white transition-colors">Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html> 

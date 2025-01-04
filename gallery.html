@@ -14,19 +14,19 @@
     <nav class="fixed w-full z-50" style="background-color: rgba(18, 18, 18, 0.95);">
         <div class="max-w-7xl mx-auto px-8">
             <div class="flex justify-between items-center h-24">
-                <a href="/" class="text-white text-3xl font-semibold">HARDWOOD HERO</a>
+                <a href="/index.html" class="text-white text-3xl font-semibold">HARDWOOD HERO</a>
                 <div class="hidden md:flex items-center bg-white/10 backdrop-blur-md rounded-full px-8 h-12">
-                    <a href="/" class="nav-link">HOME</a>
+                    <a href="/index.html" class="nav-link">HOME</a>
                     <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/services" class="nav-link">SERVICES</a>
+                    <a href="/services.html" class="nav-link">SERVICES</a>
                     <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/gallery" class="nav-link">GALLERY</a>
+                    <a href="/gallery.html" class="nav-link">GALLERY</a>
                     <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/about" class="nav-link">ABOUT</a>
+                    <a href="/about.html" class="nav-link">ABOUT</a>
                     <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/contact" class="nav-link">CONTACT</a>
+                    <a href="/contact.html" class="nav-link">CONTACT</a>
                 </div>
-                <a href="/quote" class="btn-quote">GET QUOTE</a>
+                <a href="/quote.html" class="btn-quote">GET QUOTE</a>
             </div>
         </div>
     </nav>
@@ -34,32 +34,70 @@
     <main class="pt-40 pb-24">
         <div class="max-w-7xl mx-auto px-8">
             <h1 class="text-5xl font-semibold text-white mb-4">Our Gallery</h1>
-            <p class="text-gray-400 text-xl mb-16">View our latest hardwood flooring projects</p>
+            <p class="text-gray-400 text-xl mb-8">View our latest hardwood flooring projects</p>
             
             <!-- Gallery Grid -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
                 <!-- Gallery Item 1 -->
-                <div class="relative aspect-square bg-[#1a1a1a] rounded-lg overflow-hidden group">
-                    <a href="images/gallery/1.jpg" data-lightbox="gallery" data-title="Professional Hardwood Installation">
-                        <img src="images/gallery/1.jpg" 
-                             alt="Hardwood Installation" 
-                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <span class="text-white text-lg font-medium">View Project</span>
+                <div class="group">
+                    <a href="images/gallery/1.jpg" data-lightbox="gallery" data-title="Modern Oak Installation">
+                        <div class="relative h-80 rounded-lg overflow-hidden">
+                            <img src="images/gallery/1.jpg" alt="Modern Oak Installation" 
+                                 class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-white text-lg font-medium">View Project</span>
+                            </div>
                         </div>
+                        <h3 class="text-white text-lg font-medium mt-4">Modern Oak Installation</h3>
+                        <p class="text-gray-400">Complete home installation with custom staining</p>
                     </a>
                 </div>
 
                 <!-- Gallery Item 2 -->
-                <div class="relative aspect-square bg-[#1a1a1a] rounded-lg overflow-hidden group">
-                    <a href="images/gallery/2.jpg" data-lightbox="gallery" data-title="Custom Hardwood Refinishing">
-                        <img src="images/gallery/2.jpg" 
-                             alt="Hardwood Refinishing" 
-                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <span class="text-white text-lg font-medium">View Project</span>
+                <div class="group">
+                    <a href="images/gallery/2.jpg" data-lightbox="gallery" data-title="Vintage Floor Refinishing">
+                        <div class="relative h-80 rounded-lg overflow-hidden">
+                            <img src="images/gallery/2.jpg" alt="Vintage Floor Refinishing" 
+                                 class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-white text-lg font-medium">View Project</span>
+                            </div>
                         </div>
+                        <h3 class="text-white text-lg font-medium mt-4">Vintage Floor Refinishing</h3>
+                        <p class="text-gray-400">1920s hardwood floor restoration</p>
                     </a>
+                </div>
+
+                <!-- Additional Gallery Items (3-9) following the same structure -->
+                <!-- ... -->
+
+            </div>
+
+            <!-- Before & After Section -->
+            <h2 class="text-3xl font-semibold text-white mb-12 text-center">Before & After</h2>
+            <div class="grid md:grid-cols-2 gap-12 mb-24">
+                <!-- Before & After 1 -->
+                <div class="space-y-8">
+                    <div class="relative h-80 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1583243567239-3727551e0c59?q=80&w=2000" alt="Before Refinishing" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-black/70 text-white px-4 py-2 rounded">Before</div>
+                    </div>
+                    <div class="relative h-80 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=2000" alt="After Refinishing" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-red-600 text-white px-4 py-2 rounded">After</div>
+                    </div>
+                </div>
+
+                <!-- Before & After 2 -->
+                <div class="space-y-8">
+                    <div class="relative h-80 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1583243567239-3727551e0c59?q=80&w=2000" alt="Before Installation" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-black/70 text-white px-4 py-2 rounded">Before</div>
+                    </div>
+                    <div class="relative h-80 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=2000" alt="After Installation" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-red-600 text-white px-4 py-2 rounded">After</div>
+                    </div>
                 </div>
             </div>
 
@@ -67,7 +105,7 @@
             <div class="bg-[#222222] rounded-2xl p-12 text-center mb-24">
                 <h2 class="text-3xl font-semibold text-white mb-4">Ready to Transform Your Floors?</h2>
                 <p class="text-gray-400 mb-8">Let's discuss your hardwood flooring project.</p>
-                <a href="/quote" class="btn-quote inline-block">GET FREE QUOTE</a>
+                <a href="/quote.html" class="btn-quote inline-block">GET FREE QUOTE</a>
             </div>
         </div>
     </main>
@@ -82,13 +120,12 @@
                 </div>
                 <div>
                     <h3 class="text-xl font-semibold text-white mb-4">Contact</h3>
-                    <p class="text-gray-400">(555) 123-4567<br>info@hardwoodhero.com</p>
+                    <p class="text-gray-400">(515) 339-1629<br>JeradTjaden@gmail.com</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-semibold text-white mb-4">Follow Us</h3>
                     <div class="flex gap-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Instagram</a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Facebook</a>
+                        <a href="https://www.facebook.com/HardwoodHeroDSM/" class="text-gray-400 hover:text-white transition-colors">Facebook</a>
                     </div>
                 </div>
             </div>
