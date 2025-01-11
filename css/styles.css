@@ -4,15 +4,13 @@ body {
 }
 
 .nav-link {
-    color: white;
-    font-size: 14px;
-    font-weight: 500;
-    transition: opacity 0.2s;
-    @apply text-gray-400 hover:text-white transition-colors text-center;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+    text-align: center;
 }
 
 .nav-link:hover {
-    opacity: 0.8;
+    color: rgb(156, 163, 175);
 }
 
 .btn-quote {
@@ -22,8 +20,7 @@ body {
     border-radius: 9999px;
     font-weight: 500;
     transition: all 0.3s ease;
-    @apply bg-red-600 text-white px-8 py-3 rounded-full font-semibold 
-    hover:bg-red-500 transition-colors duration-300 text-center;
+    text-align: center;
 }
 
 .btn-quote:hover {
@@ -163,12 +160,19 @@ select:focus option:hover {
 
 /* Base styles */
 .nav-link {
-    @apply text-gray-400 hover:text-white transition-colors text-center;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+    text-align: center;
 }
 
 .btn-quote {
-    @apply bg-red-600 text-white px-8 py-3 rounded-full font-semibold 
-    hover:bg-red-500 transition-colors duration-300 text-center;
+    background: rgb(220, 38, 38);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
 }
 
 /* Center all icons and text */
@@ -386,3 +390,73 @@ select:focus option:hover {
 .pt-40 {
     padding-top: 7rem;
 }
+
+/* Enhanced Fluid Typography */
+:root {
+    --fluid-min-width: 320;
+    --fluid-max-width: 1920;
+    --fluid-min-size: 14;
+    --fluid-max-size: 18;
+    --fluid-min-scale: 1.2;
+    --fluid-max-scale: 1.333;
+}
+
+/* Text scaling */
+.text-3xl { font-size: clamp(1.5rem, 4vw, 2rem); }
+.text-5xl { font-size: clamp(2rem, 6vw, 3rem); }
+.text-8xl { font-size: clamp(3rem, 10vw, 8rem); }
+.text-9xl { font-size: clamp(4rem, 12vw, 9rem); }
+
+/* Base text */
+p { font-size: clamp(1rem, 2vw, 1.125rem); }
+.text-xl { font-size: clamp(1.125rem, 2.5vw, 1.25rem); }
+
+/* Navigation */
+.nav-link { font-size: clamp(0.875rem, 1.5vw, 1rem); }
+
+/* Mobile menu links */
+.mobile-menu a { font-size: clamp(1.25rem, 4vw, 2rem); }
+
+/* Form text */
+input, textarea, select { font-size: clamp(0.875rem, 2vw, 1rem); }
+.form-label { font-size: clamp(0.8rem, 1.5vw, 0.9rem); }
+
+/* Footer text */
+footer p { font-size: clamp(0.875rem, 1.5vw, 1rem); }
+
+/* Fluid spacing */
+.p-8 { padding: clamp(1rem, 5vw, 2rem); }
+.px-8 { 
+    padding-left: clamp(1rem, 5vw, 2rem);
+    padding-right: clamp(1rem, 5vw, 2rem);
+}
+.py-24 { 
+    padding-top: clamp(2rem, 8vw, 6rem);
+    padding-bottom: clamp(2rem, 8vw, 6rem);
+}
+
+/* Fluid headings */
+h1 { font-size: clamp(2.5rem, 8vw, 6rem); }
+h2 { font-size: clamp(2rem, 5vw, 4rem); }
+h3 { font-size: clamp(1.5rem, 4vw, 3rem); }
+
+/* Fluid images and containers */
+.relative.h-60 { height: clamp(150px, 30vw, 240px); }
+.relative.h-80 { height: clamp(200px, 40vw, 320px); }
+
+/* Fluid grid gaps */
+.gap-8 { gap: clamp(1rem, 3vw, 2rem); }
+
+/* Fluid buttons */
+.btn-quote {
+    padding: clamp(0.75rem, 2vw, 1.5rem) clamp(1.5rem, 4vw, 3rem);
+    font-size: clamp(0.875rem, 2vw, 1.125rem);
+}
+
+/* Fluid margins */
+.mb-24 { margin-bottom: clamp(2rem, 6vw, 6rem); }
+.mt-12 { margin-top: clamp(1.5rem, 4vw, 3rem); }
+
+/* Fluid icons */
+.text-2xl { font-size: clamp(1.25rem, 3vw, 1.5rem); }
+.text-4xl { font-size: clamp(1.75rem, 4vw, 2.5rem); }
