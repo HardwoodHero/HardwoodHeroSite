@@ -96,7 +96,11 @@
                             </select>
                         </div>
                         <div class="mb-6">
-                            <label class="block text-white mb-2">Project Details</label>
+                            <label class="block text-white mb-2">Project Size (sq ft)</label>
+                            <input type="number" name="projectSize" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg" placeholder="Enter square footage">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-white mb-2">Additional Details</label>
                             <textarea name="details" rows="4" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg" placeholder="Tell us about your project..."></textarea>
                         </div>
                         <button type="submit" class="btn-quote">GET FREE QUOTE</button>
@@ -128,7 +132,8 @@
         </footer>
     </div>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/quote.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html> 

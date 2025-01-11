@@ -69,7 +69,7 @@
                 <div class="grid md:grid-cols-3 gap-12">
                     <!-- Contact Form -->
                     <div class="md:col-span-2 bg-[#121212] p-8" style="background: #121212; border: 2px solid #121212;">
-                        <form id="contact-form">
+                        <form id="contact-form" data-form="contact">
                             <div class="grid md:grid-cols-2 gap-6 mb-6">
                                 <div>
                                     <label class="block text-white mb-2">First Name</label>
@@ -80,9 +80,15 @@
                                     <input type="text" name="lastName" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg">
                                 </div>
                             </div>
-                            <div class="mb-6">
-                                <label class="block text-white mb-2">Email</label>
-                                <input type="email" name="email" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg">
+                            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label class="block text-white mb-2">Email</label>
+                                    <input type="email" name="email" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg">
+                                </div>
+                                <div>
+                                    <label class="block text-white mb-2">Phone</label>
+                                    <input type="tel" name="phone" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg">
+                                </div>
                             </div>
                             <div class="mb-6">
                                 <label class="block text-white mb-2">Message</label>
@@ -151,6 +157,7 @@
         </footer>
     </div>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/contact.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html> 
