@@ -9,159 +9,96 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body style="background-color: #121212;">
-    <nav class="fixed w-full z-50" style="background-color: rgba(18, 18, 18, 0.95);">
-        <div class="max-w-7xl mx-auto px-8">
-            <div class="flex justify-between items-center h-24">
-                <a href="/HardwoodHeroSite/index.html" class="text-white text-3xl font-semibold">HARDWOOD HERO</a>
-                <div class="hidden md:flex items-center bg-white/10 backdrop-blur-md rounded-full px-8 h-12">
-                    <a href="/HardwoodHeroSite/index.html" class="nav-link">HOME</a>
-                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/HardwoodHeroSite/services.html" class="nav-link">SERVICES</a>
-                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/HardwoodHeroSite/gallery.html" class="nav-link">GALLERY</a>
-                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/HardwoodHeroSite/about.html" class="nav-link">ABOUT</a>
-                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/HardwoodHeroSite/contact.html" class="nav-link">CONTACT</a>
-                </div>
-                <a href="/HardwoodHeroSite/quote.html" class="btn-quote">GET QUOTE</a>
-            </div>
-        </div>
-    </nav>
+    <!-- Background with darker overlay -->
+    <div class="fixed inset-0">
+        <img src="images/background.jpg" 
+             alt="Dark Wood Background" 
+             class="w-full h-full object-cover opacity-20">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/95 to-black/95"></div>
+    </div>
 
-    <main class="pt-40">
-        <div class="max-w-7xl mx-auto px-8">
-            <h1 class="text-5xl font-semibold text-white mb-4">Our Services</h1>
-            <p class="text-gray-400 text-xl mb-16">Expert hardwood flooring solutions for your home</p>
-            
-            <!-- Installation Section -->
-            <div class="mb-24">
-                <div class="grid md:grid-cols-2 gap-12 items-center">
+    <!-- Main content wrapper -->
+    <div class="relative z-100">
+        <nav class="fixed w-full z-50" style="background-color: rgba(18, 18, 18, 0.95);">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="flex justify-between items-center h-24">
+                    <a href="/HardwoodHeroSite/index.html" class="text-white text-3xl font-semibold">HARDWOOD HERO</a>
+                    <div class="hidden md:flex items-center bg-white/10 backdrop-blur-md rounded-full px-8 h-12">
+                        <a href="/HardwoodHeroSite/index.html" class="nav-link">HOME</a>
+                        <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                        <a href="/HardwoodHeroSite/services.html" class="nav-link">SERVICES</a>
+                        <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                        <a href="/HardwoodHeroSite/gallery.html" class="nav-link">GALLERY</a>
+                        <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                        <a href="/HardwoodHeroSite/about.html" class="nav-link">ABOUT</a>
+                        <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                        <a href="/HardwoodHeroSite/contact.html" class="nav-link">CONTACT</a>
+                    </div>
+                    <a href="/HardwoodHeroSite/quote.html" class="btn-quote">GET QUOTE</a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="pt-40 pb-24">
+            <div class="max-w-7xl mx-auto px-8">
+                <h1 class="text-5xl font-semibold text-white mb-4">Our Services</h1>
+                <p class="text-gray-400 text-xl mb-8">Professional hardwood flooring installation and refinishing</p>
+                
+                <!-- Services Grid -->
+                <div class="grid md:grid-cols-2 gap-8 mb-24">
+                    <div class="bg-[#121212] p-8" style="background: #121212; border: 2px solid #121212;">
+                        <h2 class="text-3xl font-semibold text-white mb-8">Installation</h2>
+                        <p class="text-gray-400 mb-6">Professional installation of new hardwood floors with precision and care. We ensure every detail is perfect.</p>
+                        <ul class="text-gray-400 list-disc pl-6 mb-6">
+                            <li>Pre-installation assessment and preparation</li>
+                            <li>Expert installation techniques</li>
+                            <li>Quality materials and craftsmanship</li>
+                            <li>Thorough cleanup and final inspection</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-[#121212] p-8" style="background: #121212; border: 2px solid #121212;">
+                        <h2 class="text-3xl font-semibold text-white mb-8">Refinishing</h2>
+                        <p class="text-gray-400 mb-6">Restore your existing hardwood floors to their original beauty. Transform worn floors into stunning centerpieces.</p>
+                        <ul class="text-gray-400 list-disc pl-6 mb-6">
+                            <li>Sanding and surface preparation</li>
+                            <li>Staining options available</li>
+                            <li>Professional finishing techniques</li>
+                            <li>Protective coating application</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="bg-[#121212] p-12" style="background: #121212; border: 2px solid #121212;">
+                    <h2 class="text-3xl font-semibold text-white mb-4">Ready to Transform Your Floors?</h2>
+                    <p class="text-gray-400 mb-8">Let's discuss your hardwood flooring project.</p>
+                    <a href="/HardwoodHeroSite/quote.html" class="btn-quote inline-block">GET FREE QUOTE</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer (same as index.html) -->
+        <footer class="bg-[#1a1a1a] py-16">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="grid md:grid-cols-3 gap-12">
                     <div>
-                        <h2 class="text-3xl font-semibold text-white mb-6">Professional Installation</h2>
-                        <p class="text-gray-400 mb-8">Transform your space with beautiful new hardwood floors. Our expert team handles everything from subfloor preparation to final finishing touches.</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-red-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                                </svg>
-                                Wide selection of hardwood species
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-red-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                                </svg>
-                                Expert subfloor preparation
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-red-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                                </svg>
-                                Precision installation techniques
-                            </li>
-                        </ul>
+                        <h3 class="text-xl font-semibold text-white mb-4">Hardwood Hero</h3>
+                        <p class="text-gray-400">Professional hardwood flooring services for your home.</p>
                     </div>
-                    <div class="relative h-96">
-                        <img src="https://images.unsplash.com/photo-1622398925373-3f91b1e275f5?q=80&w=2000" alt="Hardwood Floor Installation" class="w-full h-full object-cover rounded-lg">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Refinishing Section -->
-            <div class="mb-24">
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div class="order-2 md:order-1 relative h-96">
-                        <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=2000" alt="Hardwood Floor Refinishing" class="w-full h-full object-cover rounded-lg">
-                    </div>
-                    <div class="order-1 md:order-2">
-                        <h2 class="text-3xl font-semibold text-white mb-6">Floor Refinishing</h2>
-                        <p class="text-gray-400 mb-8">Restore your existing hardwood floors to their original beauty. Our refinishing process removes years of wear and brings new life to your floors.</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-red-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                                </svg>
-                                Dustless sanding system
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-red-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                                </svg>
-                                Custom stain options
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-red-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                                </svg>
-                                Premium finish options
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Repair Section -->
-            <div class="mb-24">
-                <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h2 class="text-3xl font-semibold text-white mb-6">Floor Repair</h2>
-                        <p class="text-gray-400 mb-8">Expert repairs for damaged hardwood floors. From minor scratches to major repairs, we restore your floors to perfect condition.</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-red-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                                </svg>
-                                Board replacement
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-red-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                                </svg>
-                                Scratch repair
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-red-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                                </svg>
-                                Water damage restoration
-                            </li>
-                        </ul>
+                        <h3 class="text-xl font-semibold text-white mb-4">Contact</h3>
+                        <p class="text-gray-400">(515) 339-1629<br>JeradTjaden@gmail.com</p>
                     </div>
-                    <div class="relative h-96">
-                        <img src="https://images.unsplash.com/photo-1604881991720-f91add269bed?q=80&w=2000" alt="Hardwood Floor Repair" class="w-full h-full object-cover rounded-lg">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Follow Us</h3>
+                        <div class="flex gap-4">
+                            <a href="https://www.facebook.com/HardwoodHeroDSM/" class="text-gray-400 hover:text-white transition-colors">Facebook</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- CTA Section -->
-            <div class="bg-[#222222] rounded-2xl p-12 text-center mb-24">
-                <h2 class="text-3xl font-semibold text-white mb-4">Ready to Transform Your Floors?</h2>
-                <p class="text-gray-400 mb-8">Let's discuss your hardwood flooring project.</p>
-                <a href="/HardwoodHeroSite/quote.html" class="btn-quote inline-block">GET FREE QUOTE</a>
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer (same as index.html) -->
-    <footer class="bg-[#1a1a1a] py-16">
-        <div class="max-w-7xl mx-auto px-8">
-            <div class="grid md:grid-cols-3 gap-12">
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-4">Hardwood Hero</h3>
-                    <p class="text-gray-400">Professional hardwood flooring services for your home.</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-4">Contact</h3>
-                    <p class="text-gray-400">(515) 339-1629<br>JeradTjaden@gmail.com</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-4">Follow Us</h3>
-                    <div class="flex gap-4">
-                        <a href="https://www.facebook.com/HardwoodHeroDSM/" class="text-gray-400 hover:text-white transition-colors">Facebook</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

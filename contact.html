@@ -9,149 +9,121 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body style="background-color: #121212;">
-    <!-- Nav section (same as other pages) -->
-    <nav class="fixed w-full z-50" style="background-color: rgba(18, 18, 18, 0.95);">
-        <div class="max-w-7xl mx-auto px-8">
-            <div class="flex justify-between items-center h-24">
-                <a href="/HardwoodHeroSite/index.html" class="text-white text-3xl font-semibold">HARDWOOD HERO</a>
-                <div class="hidden md:flex items-center bg-white/10 backdrop-blur-md rounded-full px-8 h-12">
-                    <a href="/HardwoodHeroSite/index.html" class="nav-link">HOME</a>
-                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/HardwoodHeroSite/services.html" class="nav-link">SERVICES</a>
-                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/HardwoodHeroSite/gallery.html" class="nav-link">GALLERY</a>
-                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/HardwoodHeroSite/about.html" class="nav-link">ABOUT</a>
-                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/HardwoodHeroSite/contact.html" class="nav-link">CONTACT</a>
+    <!-- Background with darker overlay -->
+    <div class="fixed inset-0">
+        <img src="images/background.jpg" 
+             alt="Dark Wood Background" 
+             class="w-full h-full object-cover opacity-20">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/95 to-black/95"></div>
+    </div>
+
+    <!-- Main content wrapper -->
+    <div class="relative z-100">
+        <!-- Nav section (same as other pages) -->
+        <nav class="fixed w-full z-50" style="background-color: rgba(18, 18, 18, 0.95);">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="flex justify-between items-center h-24">
+                    <a href="/HardwoodHeroSite/index.html" class="text-white text-3xl font-semibold">HARDWOOD HERO</a>
+                    <div class="hidden md:flex items-center bg-white/10 backdrop-blur-md rounded-full px-8 h-12">
+                        <a href="/HardwoodHeroSite/index.html" class="nav-link">HOME</a>
+                        <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                        <a href="/HardwoodHeroSite/services.html" class="nav-link">SERVICES</a>
+                        <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                        <a href="/HardwoodHeroSite/gallery.html" class="nav-link">GALLERY</a>
+                        <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                        <a href="/HardwoodHeroSite/about.html" class="nav-link">ABOUT</a>
+                        <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                        <a href="/HardwoodHeroSite/contact.html" class="nav-link">CONTACT</a>
+                    </div>
+                    <a href="/HardwoodHeroSite/quote.html" class="btn-quote">GET QUOTE</a>
                 </div>
-                <a href="/HardwoodHeroSite/quote.html" class="btn-quote">GET QUOTE</a>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <main class="pt-40 pb-24">
-        <div class="max-w-7xl mx-auto px-8">
-            <h1 class="text-5xl font-semibold text-white mb-4">Contact Us</h1>
-            <p class="text-gray-400 text-xl mb-16">Get in touch for your flooring needs</p>
+        <main class="pt-40 pb-24">
+            <div class="max-w-7xl mx-auto px-8">
+                <h1 class="text-5xl font-semibold text-white mb-4">Contact Us</h1>
+                <p class="text-gray-400 text-xl mb-16">Get in touch for your flooring needs</p>
 
-            <div class="grid md:grid-cols-2 gap-12 mb-24">
-                <!-- Contact Form -->
-                <div class="bg-[#1a1a1a] p-8 rounded-lg">
-                    <h2 class="text-3xl font-semibold text-white mb-8">Send us a Message</h2>
-                    <form id="contactForm" class="space-y-6">
-                        <div>
-                            <label for="name" class="block text-white mb-2">Name</label>
-                            <input type="text" id="name" name="name" required
-                                class="w-full px-4 py-2 bg-[#222222] border border-gray-700 rounded-lg text-white">
-                        </div>
-                        <div>
-                            <label for="email" class="block text-white mb-2">Email</label>
-                            <input type="email" id="email" name="email" required
-                                class="w-full px-4 py-2 bg-[#222222] border border-gray-700 rounded-lg text-white">
-                        </div>
-                        <div>
-                            <label for="phone" class="block text-white mb-2">Phone</label>
-                            <input type="tel" id="phone" name="phone"
-                                class="w-full px-4 py-2 bg-[#222222] border border-gray-700 rounded-lg text-white">
-                        </div>
-                        <div>
-                            <label for="message" class="block text-white mb-2">Message</label>
-                            <textarea id="message" name="message" rows="4" required
-                                class="w-full px-4 py-2 bg-[#222222] border border-gray-700 rounded-lg text-white"></textarea>
-                        </div>
-                        <button type="submit" class="btn-quote w-full">SEND MESSAGE</button>
-                    </form>
-                </div>
+                <div class="grid md:grid-cols-2 gap-12 mb-24">
+                    <!-- Contact Form -->
+                    <div class="bg-[#121212] p-8" style="background: #121212; border: 2px solid #121212;">
+                        <h2 class="text-3xl font-semibold text-white mb-8">Send us a Message</h2>
+                        <form id="contact-form">
+                            <div class="mb-6">
+                                <label class="block text-white mb-2">Name</label>
+                                <input type="text" name="name" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg">
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-white mb-2">Email</label>
+                                <input type="email" name="email" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg">
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-white mb-2">Message</label>
+                                <textarea name="message" rows="4" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg"></textarea>
+                            </div>
+                            <button type="submit" class="btn-quote">SEND MESSAGE</button>
+                        </form>
+                    </div>
 
-                <!-- Contact Info -->
-                <div>
-                    <div class="bg-[#1a1a1a] p-8 rounded-lg mb-8">
+                    <!-- Contact Info -->
+                    <div class="bg-[#121212] p-8" style="background: #121212; border: 2px solid #121212;">
                         <h2 class="text-3xl font-semibold text-white mb-8">Contact Information</h2>
-                        <div class="space-y-6">
-                            <div>
-                                <h3 class="text-xl font-semibold text-white mb-2">Location</h3>
-                                <p class="text-gray-400">West Des Moines, Iowa</p>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-white mb-2">Phone</h3>
-                                <p class="text-gray-400">(515) 339-1629</p>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-white mb-2">Email</h3>
-                                <p class="text-gray-400">jeradtjaden@gmail.com</p>
-                            </div>
+                        <div class="space-y-6 text-gray-400">
+                            <p>Phone: (515) 339-1629</p>
+                            <p>Email: JeradTjaden@gmail.com</p>
+                            <p>Service Area: Des Moines and surrounding areas</p>
                         </div>
                     </div>
-
-                    <div class="bg-[#1a1a1a] p-8 rounded-lg">
-                        <h2 class="text-3xl font-semibold text-white mb-8">Service Area</h2>
-                        <p class="text-gray-400 mb-4">We proudly serve the following areas:</p>
-                        <ul class="text-gray-400 space-y-2">
-                            <li>• West Des Moines</li>
-                            <li>• Des Moines</li>
-                            <li>• Ankeny</li>
-                            <li>• Urbandale</li>
-                            <li>• Johnston</li>
-                            <li>• Waukee</li>
-                            <li>• Clive</li>
-                        </ul>
-                    </div>
                 </div>
-            </div>
 
-            <!-- FAQ Section -->
-            <div class="mb-24">
-                <h2 class="text-3xl font-semibold text-white mb-12 text-center">Frequently Asked Questions</h2>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-[#1a1a1a] p-8 rounded-lg">
-                        <h3 class="text-xl font-semibold text-white mb-4">How long does installation take?</h3>
-                        <p class="text-gray-400">Most installations can be completed in 2-5 days, depending on the size and complexity of the project.</p>
-                    </div>
-                    <div class="bg-[#1a1a1a] p-8 rounded-lg">
-                        <h3 class="text-xl font-semibold text-white mb-4">Do you offer free estimates?</h3>
-                        <p class="text-gray-400">Yes! We provide free, no-obligation estimates for all our services.</p>
-                    </div>
-                    <div class="bg-[#1a1a1a] p-8 rounded-lg">
+                <!-- FAQ Grid -->
+                <div class="grid md:grid-cols-2 gap-8 mb-24">
+                    <div class="bg-[#121212] p-8" style="background: #121212; border: 2px solid #121212;">
                         <h3 class="text-xl font-semibold text-white mb-4">Are you licensed and insured?</h3>
                         <p class="text-gray-400">Yes, we are fully licensed, bonded, and insured for your peace of mind.</p>
                     </div>
-                    <div class="bg-[#1a1a1a] p-8 rounded-lg">
+                    <div class="bg-[#121212] p-8" style="background: #121212; border: 2px solid #121212;">
                         <h3 class="text-xl font-semibold text-white mb-4">What types of wood do you work with?</h3>
                         <p class="text-gray-400">We work with all major hardwood species including oak, maple, walnut, and exotic hardwoods.</p>
                     </div>
                 </div>
-            </div>
 
-            <!-- CTA Section -->
-            <div class="bg-[#222222] rounded-2xl p-12 text-center">
-                <h2 class="text-3xl font-semibold text-white mb-4">Ready to Get Started?</h2>
-                <p class="text-gray-400 mb-8">Let's discuss your hardwood flooring project.</p>
-                <a href="/HardwoodHeroSite/quote.html" class="btn-quote inline-block">GET FREE QUOTE</a>
+                <!-- CTA Section -->
+                <div class="bg-[#121212] p-12" style="background: #121212; border: 2px solid #121212;">
+                    <h2 class="text-3xl font-semibold text-white mb-4">Ready to Get Started?</h2>
+                    <p class="text-gray-400 mb-8">Let's discuss your hardwood flooring project.</p>
+                    <a href="/HardwoodHeroSite/quote.html" class="btn-quote inline-block">GET FREE QUOTE</a>
+                </div>
             </div>
-        </div>
-    </main>
-    <footer class="bg-[#1a1a1a] py-16">
-        <div class="max-w-7xl mx-auto px-8">
-            <div class="grid md:grid-cols-3 gap-12">
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-4">Hardwood Hero</h3>
-                    <p class="text-gray-400">Professional hardwood flooring services for your home.</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-4">Contact</h3>
-                    <p class="text-gray-400">(515) 339-1629<br>JeradTjaden@gmail.com</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-4">Follow Us</h3>
-                    <div class="flex gap-4">
-                        <a href="https://www.facebook.com/HardwoodHeroDSM/" class="text-gray-400 hover:text-white transition-colors">Facebook</a>
+        </main>
+
+        <footer class="bg-[#1a1a1a] py-16">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="grid md:grid-cols-3 gap-12">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Hardwood Hero</h3>
+                        <p class="text-gray-400">Professional hardwood flooring services for your home.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Contact</h3>
+                        <p class="text-gray-400">(515) 339-1629<br>JeradTjaden@gmail.com</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Follow Us</h3>
+                        <div class="flex gap-4">
+                            <a href="https://www.facebook.com/HardwoodHeroDSM/" class="text-gray-400 hover:text-white transition-colors">Facebook</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="js/main.js"></script>
+        </footer>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("PO86932EFddrAebPC");
+        })();
+    </script>
 </body>
 </html> 

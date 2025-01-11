@@ -10,127 +10,250 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 </head>
 <body style="background-color: #121212;">
-    <!-- Nav section (same as other pages) -->
-    <nav class="fixed w-full z-50" style="background-color: rgba(18, 18, 18, 0.95);">
-        <div class="max-w-7xl mx-auto px-8">
-            <div class="flex justify-between items-center h-24">
-                <a href="/HardwoodHeroSite/index.html" class="text-white text-3xl font-semibold">HARDWOOD HERO</a>
-                <div class="hidden md:flex items-center bg-white/10 backdrop-blur-md rounded-full px-8 h-12">
-                    <a href="/HardwoodHeroSite/index.html" class="nav-link">HOME</a>
-                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/HardwoodHeroSite/services.html" class="nav-link">SERVICES</a>
-                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/HardwoodHeroSite/gallery.html" class="nav-link">GALLERY</a>
-                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/HardwoodHeroSite/about.html" class="nav-link">ABOUT</a>
-                    <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
-                    <a href="/HardwoodHeroSite/contact.html" class="nav-link">CONTACT</a>
-                </div>
-                <a href="/HardwoodHeroSite/quote.html" class="btn-quote">GET QUOTE</a>
-            </div>
-        </div>
-    </nav>
+    <!-- Background with darker overlay -->
+    <div class="fixed inset-0">
+        <img src="images/background.jpg" 
+             alt="Dark Wood Background" 
+             class="w-full h-full object-cover opacity-20">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/95 to-black/95"></div>
+    </div>
 
-    <main class="pt-40 pb-24">
-        <div class="max-w-7xl mx-auto px-8">
-            <h1 class="text-5xl font-semibold text-white mb-4">Our Gallery</h1>
-            <p class="text-gray-400 text-xl mb-8">View our latest hardwood flooring projects</p>
-            
-            <!-- Gallery Grid -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
-                <!-- Gallery Item 1 -->
-                <div class="group">
-                    <a href="images/gallery/1.jpg" data-lightbox="gallery" data-title="Modern Oak Installation">
-                        <div class="relative h-80 rounded-lg overflow-hidden">
-                            <img src="images/gallery/1.jpg" alt="Modern Oak Installation" 
-                                 class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="text-white text-lg font-medium">View Project</span>
+    <!-- Main content wrapper -->
+    <div class="relative z-100">
+        <!-- Nav section (same as other pages) -->
+        <nav class="fixed w-full z-50" style="background-color: rgba(18, 18, 18, 0.95);">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="flex justify-between items-center h-24">
+                    <a href="/HardwoodHeroSite/index.html" class="text-white text-3xl font-semibold">HARDWOOD HERO</a>
+                    <div class="hidden md:flex items-center bg-white/10 backdrop-blur-md rounded-full px-8 h-12">
+                        <a href="/HardwoodHeroSite/index.html" class="nav-link">HOME</a>
+                        <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                        <a href="/HardwoodHeroSite/services.html" class="nav-link">SERVICES</a>
+                        <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                        <a href="/HardwoodHeroSite/gallery.html" class="nav-link">GALLERY</a>
+                        <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                        <a href="/HardwoodHeroSite/about.html" class="nav-link">ABOUT</a>
+                        <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
+                        <a href="/HardwoodHeroSite/contact.html" class="nav-link">CONTACT</a>
+                    </div>
+                    <a href="/HardwoodHeroSite/quote.html" class="btn-quote">GET QUOTE</a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="pt-40 pb-24">
+            <div class="max-w-7xl mx-auto px-8">
+                <h1 class="text-5xl font-semibold text-white mb-4">Our Gallery</h1>
+                <p class="text-gray-400 text-xl mb-8">View our latest hardwood flooring projects</p>
+                
+                <!-- Gallery Grid -->
+                <div class="grid md:grid-cols-3 gap-8 mb-24">
+                    <!-- Pine Section -->
+                    <div class="col-span-3">
+                        <div class="bg-[#121212] p-8" style="background: #121212; border: 2px solid #121212;">
+                            <h2 class="text-3xl font-semibold text-white mb-8">Pine Flooring</h2>
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div class="space-y-4 bg-[#121212] p-6" style="background: #121212; border: 2px solid #121212;">
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/pine/before/pine_before_1.PNG" alt="Pine Before" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">Before</div>
+                                    </div>
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/pine/before/pine_before_2.PNG" alt="Pine Before" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">Before</div>
+                                    </div>
+                                </div>
+                                <div class="space-y-4 bg-[#121212] p-6" style="background: #121212; border: 2px solid #121212;">
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/pine/after/pine_after_1.jpg" alt="Pine After" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">After</div>
+                                    </div>
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/pine/after/pine_after_2.jpg" alt="Pine After" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">After</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <h3 class="text-white text-lg font-medium mt-4">Modern Oak Installation</h3>
-                        <p class="text-gray-400">Complete home installation with custom staining</p>
-                    </a>
-                </div>
+                    </div>
 
-                <!-- Gallery Item 2 -->
-                <div class="group">
-                    <a href="images/gallery/2.jpg" data-lightbox="gallery" data-title="Vintage Floor Refinishing">
-                        <div class="relative h-80 rounded-lg overflow-hidden">
-                            <img src="images/gallery/2.jpg" alt="Vintage Floor Refinishing" 
-                                 class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                <span class="text-white text-lg font-medium">View Project</span>
+                    <!-- Red Oak Section -->
+                    <div class="col-span-3">
+                        <div class="bg-[#121212] p-8" style="background: #121212; border: 2px solid #121212;">
+                            <h2 class="text-3xl font-semibold text-white mb-8">Red Oak</h2>
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div class="space-y-4 bg-[#121212] p-6" style="background: #121212; border: 2px solid #121212;">
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/redoak/before/redoak_before_1.jpg" alt="Red Oak Before" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">Before</div>
+                                    </div>
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/redoak/before/redoak_before_2.jpg" alt="Red Oak Before" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">Before</div>
+                                    </div>
+                                </div>
+                                <div class="space-y-4 bg-[#121212] p-6" style="background: #121212; border: 2px solid #121212;">
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/redoak/after/redoadk_after_1.jpg" alt="Red Oak After" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">After</div>
+                                    </div>
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/redoak/after/redoadk_after_2.jpg" alt="Red Oak After" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">After</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <h3 class="text-white text-lg font-medium mt-4">Vintage Floor Refinishing</h3>
-                        <p class="text-gray-400">1920s hardwood floor restoration</p>
-                    </a>
+                    </div>
+
+                    <!-- Red Oak Nutmeg Section -->
+                    <div class="col-span-3">
+                        <div class="bg-[#121212] p-8" style="background: #121212; border: 2px solid #121212;">
+                            <h2 class="text-3xl font-semibold text-white mb-8">Red Oak with Nutmeg Stain</h2>
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div class="space-y-4 bg-[#121212] p-6" style="background: #121212; border: 2px solid #121212;">
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/redoak (nutmegstain)/before/redoak_nm_before_1.jpg" alt="Red Oak Nutmeg Before" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">Before</div>
+                                    </div>
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/redoak (nutmegstain)/before/redoak_nm_before_2.jpg" alt="Red Oak Nutmeg Before" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">Before</div>
+                                    </div>
+                                </div>
+                                <div class="space-y-4 bg-[#121212] p-6" style="background: #121212; border: 2px solid #121212;">
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/redoak (nutmegstain)/after/redoak_nm_after_1.jpg" alt="Red Oak Nutmeg After" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">After</div>
+                                    </div>
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/redoak (nutmegstain)/after/redoak_nm_after_2.jpg" alt="Red Oak Nutmeg After" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">After</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- White Oak Natural Section -->
+                    <div class="col-span-3">
+                        <div class="bg-[#121212] p-8" style="background: #121212; border: 2px solid #121212;">
+                            <h2 class="text-3xl font-semibold text-white mb-8">Natural White Oak</h2>
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div class="space-y-4 bg-[#121212] p-6" style="background: #121212; border: 2px solid #121212;">
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/whiteoaknatural/before/whiteoak_nat_before_1.jpg" alt="White Oak Natural Before" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">Before</div>
+                                    </div>
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/whiteoaknatural/before/whiteoak_nat_before_2.jpg" alt="White Oak Natural Before" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">Before</div>
+                                    </div>
+                                </div>
+                                <div class="space-y-4 bg-[#121212] p-6" style="background: #121212; border: 2px solid #121212;">
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/whiteoaknatural/after/whiteoak_nat_after_1.jpg" alt="White Oak Natural After" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">After</div>
+                                    </div>
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/whiteoaknatural/after/whiteoak_nat_after_2.jpg" alt="White Oak Natural After" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">After</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- White Oak Gray Section -->
+                    <div class="col-span-3">
+                        <div class="bg-[#121212] p-8" style="background: #121212; border: 2px solid #121212;">
+                            <h2 class="text-3xl font-semibold text-white mb-8">White Oak with Gray Stain</h2>
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div class="space-y-4 bg-[#121212] p-6" style="background: #121212; border: 2px solid #121212;">
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/whiteoakgraystain/before/whiteoak_gray_before_1.PNG" alt="White Oak Gray Before" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">Before</div>
+                                    </div>
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/whiteoakgraystain/before/whiteoak_gray_before_2.PNG" alt="White Oak Gray Before" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">Before</div>
+                                    </div>
+                                </div>
+                                <div class="space-y-4 bg-[#121212] p-6" style="background: #121212; border: 2px solid #121212;">
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/whiteoakgraystain/after/whiteoak_gray_after_1.PNG" alt="White Oak Gray After" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">After</div>
+                                    </div>
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/whiteoakgraystain/after/whiteoak_gray_after_2.PNG" alt="White Oak Gray After" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">After</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rustic White Oak Section -->
+                    <div class="col-span-3">
+                        <div class="bg-[#121212] p-8" style="background: #121212; border: 2px solid #121212;">
+                            <h2 class="text-3xl font-semibold text-white mb-8">Rustic White Oak</h2>
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div class="space-y-4 bg-[#121212] p-6" style="background: #121212; border: 2px solid #121212;">
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/rusticwhiteoak/before/rusticwhiteoak_before_1.jpg" alt="Rustic White Oak Before" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">Before</div>
+                                    </div>
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/rusticwhiteoak/before/rusticwhiteoak_before_2.jpg" alt="Rustic White Oak Before" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">Before</div>
+                                    </div>
+                                </div>
+                                <div class="space-y-4 bg-[#121212] p-6" style="background: #121212; border: 2px solid #121212;">
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/rusticwhiteoak/after/rusticwhiteoak_after_1.jpg" alt="Rustic White Oak After" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">After</div>
+                                    </div>
+                                    <div class="relative h-80 overflow-hidden">
+                                        <img src="images/gallery/rusticwhiteoak/after/rusticwhiteoak_after_2.jpg" alt="Rustic White Oak After" class="w-full h-full object-cover">
+                                        <div class="absolute top-4 left-4 text-white px-4 py-2" style="background: #121212; border: 2px solid #121212;">After</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Additional Gallery Items (3-9) following the same structure -->
-                <!-- ... -->
-
+                
+                <!-- CTA Section -->
+                <div class="bg-[#121212] rounded-2xl p-12 text-center mb-24">
+                    <h2 class="text-3xl font-semibold text-white mb-4">Ready to Transform Your Floors?</h2>
+                    <p class="text-gray-400 mb-8">Let's discuss your hardwood flooring project.</p>
+                    <a href="/HardwoodHeroSite/quote.html" class="btn-quote inline-block">GET FREE QUOTE</a>
+                </div>
             </div>
+        </main>
 
-            <!-- Before & After Section -->
-            <h2 class="text-3xl font-semibold text-white mb-12 text-center">Before & After</h2>
-            <div class="grid md:grid-cols-2 gap-12 mb-24">
-                <!-- Before & After 1 -->
-                <div class="space-y-8">
-                    <div class="relative h-80 rounded-lg overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1583243567239-3727551e0c59?q=80&w=2000" alt="Before Refinishing" class="w-full h-full object-cover">
-                        <div class="absolute top-4 left-4 bg-black/70 text-white px-4 py-2 rounded">Before</div>
+        <!-- Footer -->
+        <footer class="bg-[#1a1a1a] py-16">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="grid md:grid-cols-3 gap-12">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Hardwood Hero</h3>
+                        <p class="text-gray-400">Professional hardwood flooring services for your home.</p>
                     </div>
-                    <div class="relative h-80 rounded-lg overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=2000" alt="After Refinishing" class="w-full h-full object-cover">
-                        <div class="absolute top-4 left-4 bg-red-600 text-white px-4 py-2 rounded">After</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Contact</h3>
+                        <p class="text-gray-400">(515) 339-1629<br>JeradTjaden@gmail.com</p>
                     </div>
-                </div>
-
-                <!-- Before & After 2 -->
-                <div class="space-y-8">
-                    <div class="relative h-80 rounded-lg overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1583243567239-3727551e0c59?q=80&w=2000" alt="Before Installation" class="w-full h-full object-cover">
-                        <div class="absolute top-4 left-4 bg-black/70 text-white px-4 py-2 rounded">Before</div>
-                    </div>
-                    <div class="relative h-80 rounded-lg overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=2000" alt="After Installation" class="w-full h-full object-cover">
-                        <div class="absolute top-4 left-4 bg-red-600 text-white px-4 py-2 rounded">After</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Follow Us</h3>
+                        <div class="flex gap-4">
+                            <a href="https://www.facebook.com/HardwoodHeroDSM/" class="text-gray-400 hover:text-white transition-colors">Facebook</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- CTA Section -->
-            <div class="bg-[#222222] rounded-2xl p-12 text-center mb-24">
-                <h2 class="text-3xl font-semibold text-white mb-4">Ready to Transform Your Floors?</h2>
-                <p class="text-gray-400 mb-8">Let's discuss your hardwood flooring project.</p>
-                <a href="/HardwoodHeroSite/quote.html" class="btn-quote inline-block">GET FREE QUOTE</a>
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-[#1a1a1a] py-16">
-        <div class="max-w-7xl mx-auto px-8">
-            <div class="grid md:grid-cols-3 gap-12">
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-4">Hardwood Hero</h3>
-                    <p class="text-gray-400">Professional hardwood flooring services for your home.</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-4">Contact</h3>
-                    <p class="text-gray-400">(515) 339-1629<br>JeradTjaden@gmail.com</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-4">Follow Us</h3>
-                    <div class="flex gap-4">
-                        <a href="https://www.facebook.com/HardwoodHeroDSM/" class="text-gray-400 hover:text-white transition-colors">Facebook</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
