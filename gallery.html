@@ -12,10 +12,11 @@
 </head>
 <body style="background-color: #121212;">
     <!-- Background with darker overlay -->
-    <div class="fixed inset-0">
+    <div class="fixed inset-0 overflow-hidden">
         <img src="images/background.jpg" 
-             alt="Dark Wood Background" 
-             class="w-full h-full object-cover opacity-20">
+            alt="Dark Wood Background" 
+            class="w-full h-full object-cover opacity-20 select-none pointer-events-none"
+            style="position: fixed;">
         <div class="absolute inset-0 bg-gradient-to-b from-black/95 to-black/95"></div>
     </div>
 
@@ -248,8 +249,10 @@
                     </div>
                     <div>
                         <h3 class="text-xl font-semibold text-white mb-4">Follow Us</h3>
-                        <div class="flex gap-4">
-                            <a href="https://www.facebook.com/HardwoodHeroDSM/" class="text-gray-400 hover:text-white transition-colors">Facebook</a>
+                        <div class="flex justify-center gap-4">
+                            <a href="https://www.facebook.com/HardwoodHeroDSM/" class="text-gray-400 hover:text-white transition-colors text-2xl">
+                                <i class="fab fa-facebook"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
