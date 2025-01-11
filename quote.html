@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body style="background-color: #121212;">
     <!-- Background with darker overlay -->
@@ -42,79 +43,50 @@
         <main class="pt-40 pb-24">
             <div class="max-w-7xl mx-auto px-8">
                 <h1 class="text-5xl font-semibold text-white mb-4">Get a Free Quote</h1>
-                <p class="text-gray-400 text-xl mb-16">Tell us about your project for a custom quote</p>
+                <p class="text-gray-400 text-xl mb-16">Tell us about your project</p>
 
-                <div class="grid md:grid-cols-3 gap-12">
-                    <!-- Quote Form -->
-                    <div class="md:col-span-2 bg-[#121212] p-8" style="background: #121212; border: 2px solid #121212;">
-                        <form id="quote-form">
-                            <div class="grid md:grid-cols-2 gap-6 mb-6">
-                                <div>
-                                    <label class="block text-white mb-2">First Name</label>
-                                    <input type="text" name="firstName" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg">
-                                </div>
-                                <div>
-                                    <label class="block text-white mb-2">Last Name</label>
-                                    <input type="text" name="lastName" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg">
-                                </div>
+                <div class="bg-[#121212] p-8" style="background: #121212; border: 2px solid #121212;">
+                    <form id="quote-form">
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-white mb-2">First Name</label>
+                                <input type="text" name="firstName" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg">
                             </div>
-                            <div class="grid md:grid-cols-2 gap-6 mb-6">
-                                <div>
-                                    <label class="block text-white mb-2">Email</label>
-                                    <input type="email" name="email" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg">
-                                </div>
-                                <div>
-                                    <label class="block text-white mb-2">Phone</label>
-                                    <input type="tel" name="phone" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg">
-                                </div>
-                            </div>
-                            <div class="mb-6">
-                                <label class="block text-white mb-2">Address</label>
-                                <input type="text" name="address" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg">
-                            </div>
-                            <div class="mb-6">
-                                <label class="block text-white mb-2">Project Type</label>
-                                <select name="projectType" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg">
-                                    <option value="">Select a project type</option>
-                                    <option value="installation">New Installation</option>
-                                    <option value="refinishing">Refinishing</option>
-                                    <option value="repair">Repair</option>
-                                </select>
-                            </div>
-                            <div class="mb-6">
-                                <label class="block text-white mb-2">Project Details</label>
-                                <textarea name="details" rows="4" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg"></textarea>
-                            </div>
-                            <button type="submit" class="btn-quote">SUBMIT QUOTE REQUEST</button>
-                        </form>
-                    </div>
-
-                    <!-- Info Sidebar -->
-                    <div class="space-y-8">
-                        <div class="bg-[#121212] p-8" style="background: #121212; border: 2px solid #121212;">
-                            <h3 class="text-2xl font-semibold text-white mb-4">Why Choose Us</h3>
-                            <ul class="text-gray-400 space-y-4">
-                                <li>✓ Free, no-obligation quotes</li>
-                                <li>✓ Over 20 years of experience</li>
-                                <li>✓ Licensed and insured</li>
-                                <li>✓ Premium materials used</li>
-                            </ul>
-                        </div>
-
-                        <div class="bg-[#121212] p-8" style="background: #121212; border: 2px solid #121212;">
-                            <h3 class="text-2xl font-semibold text-white mb-4">Contact Info</h3>
-                            <div class="text-gray-400 space-y-2">
-                                <p>Phone: (515) 339-1629</p>
-                                <p>Email: JeradTjaden@gmail.com</p>
+                            <div>
+                                <label class="block text-white mb-2">Last Name</label>
+                                <input type="text" name="lastName" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg">
                             </div>
                         </div>
-                    </div>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-white mb-2">Email</label>
+                                <input type="email" name="email" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg">
+                            </div>
+                            <div>
+                                <label class="block text-white mb-2">Phone</label>
+                                <input type="tel" name="phone" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-white mb-2">Service Type</label>
+                            <select name="service" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg">
+                                <option value="">Select a service...</option>
+                                <option value="installation">Installation</option>
+                                <option value="refinishing">Refinishing</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-white mb-2">Project Details</label>
+                            <textarea name="details" rows="4" class="w-full bg-[#1a1a1a] text-white p-3 rounded-lg" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-quote">GET FREE QUOTE</button>
+                    </form>
                 </div>
             </div>
         </main>
 
         <!-- Footer -->
-        <footer class="bg-[#1a1a1a] py-16">
+        <footer class="bg-[#121212] py-16">
             <div class="max-w-7xl mx-auto px-8">
                 <div class="grid md:grid-cols-3 gap-12">
                     <div>
