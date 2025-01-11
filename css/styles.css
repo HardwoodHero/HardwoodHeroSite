@@ -8,6 +8,7 @@ body {
     font-size: 14px;
     font-weight: 500;
     transition: opacity 0.2s;
+    @apply text-gray-400 hover:text-white transition-colors text-center;
 }
 
 .nav-link:hover {
@@ -21,6 +22,8 @@ body {
     border-radius: 9999px;
     font-weight: 500;
     transition: all 0.3s ease;
+    @apply bg-red-600 text-white px-8 py-3 rounded-full font-semibold 
+    hover:bg-red-500 transition-colors duration-300 text-center;
 }
 
 .btn-quote:hover {
@@ -156,4 +159,184 @@ select option {
 
 select:focus option:hover {
     background-color: rgb(220, 38, 38);
-} 
+}
+
+/* Base styles */
+.nav-link {
+    @apply text-gray-400 hover:text-white transition-colors text-center;
+}
+
+.btn-quote {
+    @apply bg-red-600 text-white px-8 py-3 rounded-full font-semibold 
+    hover:bg-red-500 transition-colors duration-300 text-center;
+}
+
+/* Center all icons and text */
+.text-4xl, .text-2xl, .text-xl, p {
+    text-align: center;
+}
+
+.fas {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: flex;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .mobile-menu.hidden {
+        display: none;
+    }
+
+    .mobile-menu:not(.hidden) {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    
+    /* Typography */
+    h1.text-8xl {
+        font-size: 4rem !important;
+        line-height: 1.1;
+        text-align: center;
+    }
+    
+    .btn-quote {
+        width: calc(100% - 2rem);
+        margin: 0 auto;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1.text-8xl {
+        font-size: 6rem !important;
+    }
+    
+    .px-8 {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    background: rgba(18, 18, 18, 0.98);
+}
+
+.mobile-menu > div {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.mobile-menu a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: rgb(220, 38, 38);
+    transition: all 0.3s ease;
+}
+
+.mobile-menu a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.mobile-menu .btn-quote {
+    width: auto;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    transform-origin: center;
+}
+
+.mobile-menu .btn-quote:hover {
+    transform: scale(1.05);
+}
+
+#close-menu {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+#close-menu:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(90deg);
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .text-center-mobile {
+        text-align: center !important;
+    }
+    
+    .grid {
+        justify-items: center;
+    }
+    
+    .grid > div {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .btn-quote {
+        display: block;
+        width: auto;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}
+
+/* About page specific */
+.grid.md\:grid-cols-2 > div {
+    margin-bottom: 2rem;
+}
+
+.relative.h-80 {
+    height: 240px;
+}
+
+.relative.h-60 {
+    height: 200px;
+}
+
+.p-8 {
+    padding: 1.5rem;
+}
+
+.mb-24 {
+    margin-bottom: 3rem;
+}
+
+.pt-40 {
+    padding-top: 7rem;
+}

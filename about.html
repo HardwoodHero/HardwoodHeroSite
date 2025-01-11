@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body style="background-color: #121212;">
     <!-- Background with darker overlay -->
@@ -22,6 +23,11 @@
         <div class="max-w-7xl mx-auto px-8">
             <div class="flex justify-between items-center h-24">
                 <a href="/HardwoodHeroSite/index.html" class="text-white text-3xl font-semibold">HARDWOOD HERO</a>
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center bg-white/10 backdrop-blur-md rounded-full px-8 h-12">
                     <a href="/HardwoodHeroSite/index.html" class="nav-link">HOME</a>
                     <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
@@ -33,7 +39,21 @@
                     <span class="w-1 h-1 bg-white/20 rounded-full mx-4"></span>
                     <a href="/HardwoodHeroSite/contact.html" class="nav-link">CONTACT</a>
                 </div>
-                <a href="/HardwoodHeroSite/quote.html" class="btn-quote">GET QUOTE</a>
+                <!-- Mobile Navigation -->
+                <div class="mobile-menu hidden fixed inset-0 bg-black/95 z-50 md:hidden">
+                    <div class="flex flex-col items-center justify-center h-full space-y-8">
+                        <button class="absolute top-6 right-6 text-white" id="close-menu">
+                            <i class="fas fa-times text-2xl"></i>
+                        </button>
+                        <a href="/HardwoodHeroSite/index.html" class="text-white text-2xl">HOME</a>
+                        <a href="/HardwoodHeroSite/services.html" class="text-white text-2xl">SERVICES</a>
+                        <a href="/HardwoodHeroSite/gallery.html" class="text-white text-2xl">GALLERY</a>
+                        <a href="/HardwoodHeroSite/about.html" class="text-white text-2xl">ABOUT</a>
+                        <a href="/HardwoodHeroSite/contact.html" class="text-white text-2xl">CONTACT</a>
+                        <a href="/HardwoodHeroSite/quote.html" class="btn-quote mt-8">GET FREE QUOTE</a>
+                    </div>
+                </div>
+                <a href="/HardwoodHeroSite/quote.html" class="btn-quote hidden md:inline-block">GET QUOTE</a>
             </div>
         </div>
     </nav>
@@ -150,5 +170,6 @@
             </div>
         </footer>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html> 
